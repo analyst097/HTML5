@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia in a webpage</h1>
+    <h3>Objectives</h3>
+    <ul>
+        <li>Describe HTML audio and video elements</li>
+        <li>Explain the purpose of plugins</li>
+        <li>Reflect on accessibility issues</li>
+    </ul>
+
+    <h3>HTML5 Multimedia</h3>
+    <ul>
+        <li>Designed to avoid any external plugins to play audio/video</li>
+        <li>Not fully implemented</li>
+    </ul>
+
+    <h3>Video element &lt;video&gt;</h3>
+    <ul>
+        <li>Video tag uses a src attribute or embedded &lt;source&gt;</li>
+        <li>Common attributes
+            <ul>
+                <li>height, width</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>controls</li>
+            </ul>
+        </li>
+        <li>Text inside &lt;video&gt; is displayed if browser cannot support tag</li>
+    </ul>
+
+    <h3>Audio element &lt;audio&gt;</h3>
+    <ul>
+        <li>Uses a src attribute to link to .mp3 or .wav file </li>
+        <li>Common attributes
+            <ul>
+                <li>autoplay, loop, controls</li>
+                <li>buffered</li>
+                <li>muted</li>
+                <li>volume</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Setting clips</h3>
+    <ul>
+        <li>Play clips of video and audio elemets by adding to the src attribute:</li>
+        <ul>
+            <li>.ext#t= 5, 25</li>
+            <li>.ext#t= , 39</li>
+            <li>.ext#t= , 1:29:23</li>
+            <li>.ext#t= 42</li>
+        </ul>
+    </ul>
+
+    <h2>Video</h2>
+    <video src="video.mp4" width="50%" controls>
+        your browser does not support <code>video</code> element.
+    </video><br>
+    <video src="video.mp4#t=10" width="50%" controls>
+        your browser does not support <code>video</code> element.
+    </video>
+
+    <h2>Audio</h2>
+    <audio src="audio.mp3" controls>
+        Audio not supported.!!
+    </audio>
+
+    <audio src="audio.mp3#t=10" controls>
+        Audio not supported.!!
+    </audio>
+
+</body>
+</html>

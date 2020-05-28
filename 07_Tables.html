@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables</h1><hr>
+    <h3>Design</h3>
+    <ul>
+        <li>Make sure to sketch your layout before you code.</li>
+        <li>Decide the number of rows and columns</li>
+        <li>Decide any rows or columns will span multiple cells.</li>
+    </ul>
+
+    <h2>The tags
+        <ul>
+            <li>&lt;table&gt;</li>
+            <li>&lt;tr&gt;</li>
+            <li>&lt;td&gt;</li>
+        </ul>
+    </h2>
+    
+
+    <h3>Simple table</h3>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        
+        <tr>
+            <td>four</td>
+            <td>five</td>
+            <td>six</td>
+        </tr>
+    </table>
+
+    <h3>Table headings <strong>&lt;th&gt;</strong></h3>
+    <table>
+        <tr>
+            <th>Col one</th>
+            <th>Col two</th>
+            <th>Col three</th>
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        
+        <tr>
+            <td>four</td>
+            <td>five</td>
+            <td>six</td>
+        </tr>
+
+    </table>
+    
+    <h3>Spanning multiple cells using rowspan and colspan attributes.</h3>
+    <p>You can can multiple rows and/or columns using rowspan and colspan attributes.</p>
+    <table border="1">
+        <tr>
+            <th colspan="2" >Col one</th>
+            <th colspan="2" >Col two</th>
+            <th colspan="2" >Col three</th>
+        </tr>
+        <tr>
+            <td colspan="2" >one</td>
+            <td colspan="2" >two</td>
+            <td colspan="2" >three</td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" >four</td>
+            <td colspan="2" >five</td>
+            <td colspan="2" >six</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

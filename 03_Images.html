@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="android.png" />
+        <title>Images</title>
+    </head>
+    <body>
+        <h1>Image tag</h1>
+        <p>It's better to modify the actual image file if possible rather modifying width and height.<br>
+            Reducing size of the actual image reduces the file size which leads to faster loading of web page.<br>
+            It's also helpful in displaying accurate size of image we need.
+        </p>
+
+        <figure>
+            <img src="android.png"
+                 alt="Android " >
+            <figcaption>
+                Android (normal image size)
+            </figcaption>
+            
+            <img src="android.png"
+                 alt="Android "
+                 width="500px"  >
+            <figcaption>
+                Android (500px)
+            </figcaption>
+
+            <img src="android.png"
+                 alt="Android "
+                 width="500px" height="200px" >
+            <figcaption>
+                Android (500x200 px) skewed image.
+            </figcaption>
+
+            
+            <img src="android.png"
+                 alt="Android 500x200px"
+                 width="50%" >
+            <figcaption>
+                Android (50% of page size)
+                It auto adjusts the image to half of the page size.
+            </figcaption>
+        </figure>
+
+        <h1>Favicons</h1>
+        <p>
+            To add icons to title of our webpage we need to add a link in the &lt;head&gt; tag with a<br>
+            .png or special icon image only.
+        </p>
+
+        <h1>Alt attribute</h1>
+        <p>
+            <ul>
+                <li>Provides textual alternative to non-text content.</li>
+                <li>Read by screen readers</li>
+                <li>Displayed in place of images</li>
+                <li>Provides semantic meaning for search engines.</li>
+            </ul>
+        </p>
+
+        <h2>Creating good alt text.</h2>
+        <ul>
+            <li>be accurate</li>
+            <li>succint</li>
+            <li>Don't be redundant</li>
+            <li>Don't include "picture of..", "graphic of.."</li>
+            <li>It's ok to have empty alt text</li>
+            <li>Do not skip it though as it helps in accessibility.</li>
+        </ul>
+
+        <h1>Review</h1>
+        <p>
+            <ul>
+                <li>Give proper file extentions of images</li>
+                <li>Short filename</li>
+                <li>Short filepath</li>
+                <li>For now keep modifying image size from html.</li>
+            </ul>
+        </p>    
+
+        <h1>Alternative Text</h1>
+        <p> Creating good alternative text is almost an art. The good news is that it is an art that even 
+        artistically-challenged people like myself can do well. The key is to think about the meanings
+         behind your images, not a description of them. So here are some tips:
+        </p>
+
+        <h3>Tips</h3>
+        <ul>
+            <li>Decide what information the image conveys: Does someone need to see the page to understand your
+                 message? If not, you can treat the image as decorative use a null (empty) text alternative (alt=""). 
+                Make sure not to include a space inside the quotes since some screen readers may then read it aloud.
+            </li>
+            <li>
+                If the image is information, be complete, but concise: In most cases you should be able to 
+                use a short phrase or sentence as alt text.
+            </li>
+            <li>
+                Prioritize information in text alternative: Aim to put the most important information 
+                at the beginning.
+            </li>
+            <li>
+                Avoid superfluous information: There is rarely a need to use the words “image”, “icon”, 
+                or “picture” in the alt text.
+            </li>
+            <li>
+                Handle complex images as a special case: Complex images such as graphs, charts, maps,
+                 and illustrations contain substantial information – more than can be conveyed in a 
+                 short phrase or sentence. In these cases, a two-part text alternative is required. 
+                 The first part is the short description to identify the image and, where appropriate, 
+                 indicate the location of the long description. The second part is the long description –
+                  a textual representation of the essential information conveyed by the image.
+
+            </li>
+        </ul>
+        
+    </body> 
+</html>
